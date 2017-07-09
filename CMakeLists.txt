@@ -3,5 +3,5 @@ project(tree_c)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp evaluator.cpp evaluator.h emotion.cpp emotion.h user_data.cpp user_data.h)
 add_executable(tree_c ${SOURCE_FILES})
