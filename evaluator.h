@@ -5,4 +5,15 @@
 #ifndef TREE_C_EVALUATOR_H
 #define TREE_C_EVALUATOR_H
 
+#include <vector>
+#include "emotion.h"
+
+class evaluate{
+private:
+
+public:
+    emotion eval(std::vector<emotion> input);
+};
+
+
 #endif //TREE_C_EVALUATOR_H

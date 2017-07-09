@@ -7,17 +7,13 @@
 #include<vector>
 #include<map>
 
-class evaluate{
-private:
 
-public:
-    emotion eval(std::vector<emotion> input){
-        emotion max_value;
-        for(auto item : input){
-            if(max_value.is_larger(item)){
-                max_value = item;
-            }
+emotion emotion::eval(std::vector<emotion> input){
+    emotion max_value;
+    for(auto item : input){
+        if(max_value.is_larger(item)){
+            max_value = item;
         }
-        return max_value;
     }
-};
+    return max_value;
+}
