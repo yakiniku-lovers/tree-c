@@ -3,7 +3,7 @@
 //
 
 #include <string>
-#include "emotion.h"
+#include "./../h/emotion.h"
 
 emotion::emotion():
     name(""),value(0){

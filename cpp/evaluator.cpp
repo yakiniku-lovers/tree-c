@@ -1,8 +1,8 @@
 //
 // Created by Shohei Matsugu on 2017/07/09.
 //
-#include"evaluator.h"
-#include"emotion.h"
+#include"./../h/evaluator.h"
+#include"./../h/emotion.h"
 #include<iostream>
 #include<vector>
 #include<map>
