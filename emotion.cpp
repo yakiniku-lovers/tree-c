@@ -13,6 +13,6 @@ emotion::emotion(std::string s,int v):
     name(s),value(v){
 
 }
-bool emotion::is_larger(emotion em) {
+const bool emotion::is_larger(emotion em) {
     return this->value > em.value;
 }

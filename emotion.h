@@ -13,7 +13,7 @@ public:
     emotion();
     emotion(std::string s,int v);
 
-    bool is_larger(emotion em);
+    const bool is_larger(emotion em);
 
     emotion eval(std::vector<emotion, std::allocator<emotion>> input);
 };

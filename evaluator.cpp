@@ -7,13 +7,14 @@
 #include<vector>
 #include<map>
 
-
-emotion emotion::eval(std::vector<emotion> input){
-    emotion max_value;
-    for(auto item : input){
-        if(max_value.is_larger(item)){
-            max_value = item;
-        }
+//とりあえず。空ならカラコン、否なら先頭を返す。
+user_data evaluator::eval(std::vector<user_data> input){
+    try{
+        if(input.size() == 0)throw "Exception: input size is 0.";
     }
-    return max_value;
+    catch(char *str){
+        std::cout << str << std::endl;
+        return user_data();
+    }
+    return input[0];
 }

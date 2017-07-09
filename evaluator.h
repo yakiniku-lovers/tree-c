@@ -7,12 +7,13 @@
 
 #include <vector>
 #include "emotion.h"
+#include "user_data.h"
 
-class evaluate{
+class evaluator{
 private:
 
 public:
-    emotion eval(std::vector<emotion> input);
+    user_data eval(std::vector<user_data> input);
 };
 
 
