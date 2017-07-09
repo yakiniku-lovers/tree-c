@@ -2,7 +2,7 @@
 // Created by KazukiChigita on 2017/07/09.
 //
 
-#include "output_manager.h"
+#include "./../h/output_manager.h"
 output_manager::output_manager(){
 }
 

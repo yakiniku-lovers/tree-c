@@ -4,8 +4,8 @@
 
 #include <vector>
 #include <iostream>
-#include "user_data.h"
-#include "emotion.h"
+#include "./../h/user_data.h"
+#include "./../h/emotion.h"
 
 emotion user_data::get_emotions_by_id(int index) {
     try{
