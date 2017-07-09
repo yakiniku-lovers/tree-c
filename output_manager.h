@@ -10,11 +10,6 @@
 #include <iostream>
 
 class output_manager {
-public:
-    output_manager();
-    ~output_manager();
-    void output_result();
-private:
     class color{
     public:
         color();
@@ -29,6 +24,10 @@ private:
     int petal;
     color col;
     std::pair<int, color> get_form();
+public:
+    output_manager();
+    ~output_manager();
+    void output_result();
 };
 
 
