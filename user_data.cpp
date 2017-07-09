@@ -14,7 +14,7 @@ emotion user_data::get_emotions_by_id(int index) {
         }
     }
     catch(char *str){
-        std::cout << str << std::endl;
+        std::cerr << str << std::endl;
     }
     return emotions[index];
 }

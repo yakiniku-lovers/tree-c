@@ -13,7 +13,7 @@ user_data evaluator::eval(std::vector<user_data> input){
         if(input.size() == 0)throw "Exception: input size is 0.";
     }
     catch(char *str){
-        std::cout << str << std::endl;
+        std::cerr << str << std::endl;
         return user_data();
     }
     return input[0];
