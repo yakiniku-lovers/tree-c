@@ -5,7 +5,16 @@
 #ifndef TREE_C_USER_DATA_H
 #define TREE_C_USER_DATA_H
 
+#include <vector>
+#include "emotion.h"
 
+class user_data{
+    std::vector<emotion> emotions;
+
+public:
+    user_data(){}
+    emotion get_emotions_by_id(int index);
+};
 
 
 
