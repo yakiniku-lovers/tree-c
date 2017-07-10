@@ -9,17 +9,7 @@ output_manager::output_manager(){
 output_manager::~output_manager() {
 }
 
-output_manager::color::color(){
-    this->r = 0;
-    this->g = 0;
-    this->b = 0;
-}
 
-output_manager::color::color(int r, int g, int b){
-    this->r = r;
-    this->g = g;
-    this->b = b;
-}
 
 void output_manager::output_result() {
     auto result = get_form();
@@ -33,6 +23,6 @@ void output_manager::output_result() {
               << shape << std::endl;
     return ;
 }
-std::tuple<int, output_manager::color, int> output_manager::get_form() {
+std::tuple<int, color, int> output_manager::get_form() {
     return std::make_tuple(this->petal, this->col, this->shape);
 }

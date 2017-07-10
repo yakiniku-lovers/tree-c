@@ -8,17 +8,9 @@
 
 #include <utility>
 #include <iostream>
+#include "color.h"
 
 class output_manager {
-    class color{
-        int r,g,b;
-    public:
-        color();
-        color(int r,int g,int b);
-        inline int get_r() { return r; }
-        inline int get_g() { return g; }
-        inline int get_b() { return b; }
-    };
     int petal;
     color col;
     int shape;
