@@ -14,7 +14,5 @@ public:
     emotion(std::string s,int v);
 
     const bool is_larger(emotion em);
-
-    emotion eval(std::vector<emotion, std::allocator<emotion>> input);
 };
 #endif //TREE_C_EMOTION_H
