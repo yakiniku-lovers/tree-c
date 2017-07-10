@@ -5,8 +5,7 @@
 #include"./../h/emotion.h"
 #include "../h/output_manager.h"
 #include"../h/constant.h"
-#include<cstdlib>
-#include<ctime>
+#include<random>
 #include<iostream>
 #include<vector>
 #include<map>
@@ -21,10 +20,12 @@ output_manager evaluator::eval(std::vector<user_data> input){
         std::cerr << str << std::endl;
         return output_manager();
     }
-    srand(time(NULL));
-    int petal = rand()%constant::PETAL_SIZE;
+    std::random_device rd;
+    std::mt19937 mt(rd());
+
+    int petal = mt()%constant::PETAL_SIZE;
     color col = color(rand() % 256, rand() % 256, rand() % 256);
-    int shape = rand()%constant::SHAPE_SIZE;
+    int shape = mt()%constant::SHAPE_SIZE;
 
     provisional_output = output_manager(petal,col,shape);
     return provisional_output;
