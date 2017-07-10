@@ -8,12 +8,12 @@
 #include <vector>
 #include "emotion.h"
 #include "user_data.h"
+#include "output_manager.h"
 
 class evaluator{
-private:
 
 public:
-    user_data eval(std::vector<user_data> input);
+    output_manager eval(std::vector<user_data> input);
 };
 
 
