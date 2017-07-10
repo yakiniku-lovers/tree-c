@@ -13,7 +13,7 @@ class user_data{
 
 public:
     user_data(){}
-    emotion get_emotions_by_id(int index);
+    emotion get_emotion_by_id(int index);
 };
 
 
