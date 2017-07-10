@@ -4,6 +4,15 @@
 
 #include "./../h/input_manager.h"
 
+input_manager::input_manager() {
+    eval = new evaluator();
+    scan();
+}
+
+input_manager::~input_manager() {
+    delete eval;
+}
+
 void input_manager::scan() {
     std::cin >> tweet_size >> emotion_size;
     init_variables();
