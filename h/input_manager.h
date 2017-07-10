@@ -6,8 +6,17 @@
 #define TREE_C_INPUT_MANAGER_H
 
 
-class input_manager {
+#include <string>
+#include <vector>
+#include <iostream>
 
+class input_manager {
+    int tweets,emotions;
+    std::vector < std::string > tags;
+    std::vector < std::vector < double > > parameters;
+    void init_variables();
+public:
+    void scan();
 };
 
 
