@@ -5,15 +5,15 @@
 #include "./../h/input_manager.h"
 
 void input_manager::scan() {
-    std::cin >> tweets >> emotions;
+    std::cin >> tweet_size >> emotion_size;
     init_variables();
-    for(int i = 0; i < emotions; ++i){
+    for(int i = 0; i < emotion_size; ++i){
         std::string tag;
         std::cin >> tag;
         tags.emplace_back(tag);
     }
-    for(int i= 0; i < tweets; ++i){
-        for(int j = 0; j < emotions; ++j) {
+    for(int i= 0; i < tweet_size; ++i){
+        for(int j = 0; j < emotion_size; ++j) {
             std::cin >> parameters[i][j];
         }
     }
@@ -21,10 +21,10 @@ void input_manager::scan() {
 }
 
 void input_manager::init_variables() {
-    parameters.resize(tweets);
+    parameters.resize(tweet_size);
 
-    for(int i = 0; i < tweets; ++i){
-        parameters[i].resize(emotions);
+    for(int i = 0; i < tweet_size; ++i){
+        parameters[i].resize(emotion_size);
     }
     return ;
 }

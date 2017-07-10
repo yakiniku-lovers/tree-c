@@ -11,7 +11,7 @@
 #include <iostream>
 
 class input_manager {
-    int tweets,emotions;
+    int tweet_size,emotion_size;
     std::vector < std::string > tags;
     std::vector < std::vector < double > > parameters;
     void init_variables();
