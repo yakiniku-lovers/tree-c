@@ -17,13 +17,11 @@ input_manager::~input_manager() {
 std::vector <user_data> input_manager::convert_to_user_data(){
     std::vector <user_data> changed;
     for(int i = 0; i < tweet_size; ++i) {
-        user_data *data;
         std::vector <emotion> emotions;
         for(int j = 0; j < emotion_size; ++j){
-            emotions.emplace_back(new emotion(tags[j],parameters[i][j]));
+            emotions.emplace_back(emotion(tags[j],parameters[i][j]));
         }
-        data = new user_data(emotions);
-        changed.emplace_back(data);
+        changed.emplace_back(user_data(emotions));
     }
 }
 

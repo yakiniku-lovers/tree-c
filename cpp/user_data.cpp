@@ -7,7 +7,7 @@
 #include "./../h/user_data.h"
 #include "./../h/emotion.h"
 
-emotion user_data::user_data(std::vector<emotion> &emotions) const{
+user_data::user_data(std::vector<emotion> &emotions){
     this->emotions = emotions;
 }
 
