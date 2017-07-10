@@ -17,6 +17,7 @@ class output_manager {
     std::tuple<int, color, int> get_form();
 public:
     output_manager();
+    output_manager(int p,color c,int s);
     ~output_manager();
     void output_result();
 };

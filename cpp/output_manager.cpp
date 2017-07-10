@@ -6,6 +6,12 @@
 output_manager::output_manager(){
 }
 
+output_manager::output_manager(int p, color c, int s) {
+    petal = p;
+    col = c;
+    shape = s;
+}
+
 output_manager::~output_manager() {
 }
 
@@ -26,3 +32,4 @@ void output_manager::output_result() {
 std::tuple<int, color, int> output_manager::get_form() {
     return std::make_tuple(this->petal, this->col, this->shape);
 }
+
