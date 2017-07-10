@@ -16,12 +16,12 @@ class input_manager {
     std::vector < std::string > tags;
     std::vector < std::vector < double > > parameters;
     evaluator *evltr;
+    void scan();
     void init_variables();
     std::vector<user_data> convert_to_user_data();
 public:
     input_manager();
     ~input_manager();
-    void scan();
 };
 
 

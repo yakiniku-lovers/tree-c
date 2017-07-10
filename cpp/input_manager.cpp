@@ -23,6 +23,7 @@ std::vector <user_data> input_manager::convert_to_user_data(){
         }
         changed.emplace_back(user_data(emotions));
     }
+    return changed;
 }
 
 void input_manager::scan() {
