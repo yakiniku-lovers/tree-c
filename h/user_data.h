@@ -13,6 +13,7 @@ class user_data{
 
 public:
     user_data(){}
+    user_data(std::vector<emotion> &emotions)const;
     emotion get_emotion_by_id(int index);
 };
 
