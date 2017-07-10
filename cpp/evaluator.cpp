@@ -24,7 +24,7 @@ output_manager evaluator::eval(std::vector<user_data> input){
     std::mt19937 mt(rd());
 
     int petal = mt()%constant::PETAL_SIZE;
-    color col = color(rand() % 256, rand() % 256, rand() % 256);
+    color col = color(mt() % 256, mt() % 256, mt() % 256);
     int shape = mt()%constant::SHAPE_SIZE;
 
     provisional_output = output_manager(petal,col,shape);
