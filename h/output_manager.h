@@ -21,7 +21,8 @@ class output_manager {
     };
     int petal;
     color col;
-    std::pair<int, color> get_form();
+    int shape;
+    std::tuple<int, color, int> get_form();
 public:
     output_manager();
     ~output_manager();
