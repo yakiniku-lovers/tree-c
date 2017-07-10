@@ -5,7 +5,8 @@
 #ifndef TREE_C_INPUT_MANAGER_H
 #define TREE_C_INPUT_MANAGER_H
 
-
+#include "./../h/evaluator.h"
+#include "./../h/user_data.h"
 #include <string>
 #include <vector>
 #include <iostream>
@@ -14,9 +15,13 @@ class input_manager {
     int tweet_size,emotion_size;
     std::vector < std::string > tags;
     std::vector < std::vector < double > > parameters;
-    void init_variables();
-public:
+    evaluator *evltr;
     void scan();
+    void init_variables();
+    std::vector<user_data> convert_to_user_data();
+public:
+    input_manager();
+    ~input_manager();
 };
 
 
