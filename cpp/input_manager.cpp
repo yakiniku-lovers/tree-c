@@ -5,12 +5,26 @@
 #include "./../h/input_manager.h"
 
 input_manager::input_manager() {
-    eval = new evaluator();
     scan();
+    evltr = new evaluator();
+    evltr->eval(convert_to_user_data());
 }
 
 input_manager::~input_manager() {
-    delete eval;
+    delete evltr;
+}
+
+std::vector <user_data> input_manager::convert_to_user_data(){
+    std::vector <user_data> changed;
+    for(int i = 0; i < tweet_size; ++i) {
+        user_data *data;
+        std::vector <emotion> emotions;
+        for(int j = 0; j < emotion_size; ++j){
+            emotions.emplace_back(new emotion(tags[j],parameters[i][j]));
+        }
+        data = new user_data(emotions);
+        changed.emplace_back(data);
+    }
 }
 
 void input_manager::scan() {
