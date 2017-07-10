@@ -34,8 +34,8 @@ void input_manager::scan() {
         std::cin >> tag;
         tags.emplace_back(tag);
     }
-    for(int i= 0; i < tweet_size; ++i){
-        for(int j = 0; j < emotion_size; ++j) {
+    for(int i = 0; i < tweet_size; ++i){
+        for(int j = 0; j < emotion_size; ++j){
             std::cin >> parameters[i][j];
         }
     }
