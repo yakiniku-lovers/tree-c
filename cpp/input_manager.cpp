@@ -7,7 +7,8 @@
 input_manager::input_manager() {
     scan();
     evltr = new evaluator();
-    evltr->eval(convert_to_user_data());
+    output_manager om = evltr->eval(convert_to_user_data());
+    om.output_result();
 }
 
 input_manager::~input_manager() {
