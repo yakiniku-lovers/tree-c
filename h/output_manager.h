@@ -7,6 +7,7 @@
 
 
 #include <utility>
+#include <tuple>
 #include <iostream>
 #include "color.h"
 
